@@ -20,7 +20,6 @@ class VehicleFactory extends Factory
             'horsepower' => $this->faker->numberBetween(120, 500),
             'driver_id' => $this->faker->numberBetween(1, 10),
             'manufacturer_id' => $this->faker->numberBetween(1, 10),
-
         ];
     }
 }

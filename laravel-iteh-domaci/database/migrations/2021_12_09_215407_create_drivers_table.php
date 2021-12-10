@@ -21,7 +21,6 @@ class CreateDriversTable extends Migration
             $table->integer('age');
             $table->double('height');
             $table->double('weight');
-            $table->foreignId('vehicle_id');
             $table->timestamps();
         });
     }

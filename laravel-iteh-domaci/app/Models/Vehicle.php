@@ -13,15 +13,22 @@ class Vehicle extends Model
         'name',
         'model',
         'max_speed',
-        'horsepower'
+        'horsepower',
+        'driver_id',
+        'manufacturer_id'
     ];
 
     protected $guarded = [
-        'id'
+        'id',
     ];
 
     public function driver()
     {
         return $this->hasOne(Driver::class);
+    }
+
+    public function manufacturer()
+    {
+        return $this->belongsTo(Manufacturer::class);
     }
 }

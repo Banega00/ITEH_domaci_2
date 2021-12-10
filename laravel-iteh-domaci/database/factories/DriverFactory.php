@@ -20,7 +20,6 @@ class DriverFactory extends Factory
             'age' => $this->faker->numberBetween(18, 45),
             'height' => $this->faker->numberBetween(160, 210),
             'weight' => $this->faker->numberBetween(65, 100),
-            'vehicle_id' => $this->faker->numberBetween(1, 10)
         ];
     }
 }

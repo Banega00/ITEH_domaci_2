@@ -22,9 +22,9 @@ class Driver extends Model
         'id'
     ];
 
-    public function vehicle()
+    public function vehicles()
     {
-        return $this->belongsTo(Vehicle::class);
+        return $this->hasMany(Vehicle::class);
     }
 
     public function manufacturer()
