@@ -15,7 +15,8 @@ class Vehicle extends Model
         'max_speed',
         'horsepower',
         'driver_id',
-        'manufacturer_id'
+        'manufacturer_id',
+        'fuel'
     ];
 
     protected $guarded = [

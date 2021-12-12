@@ -18,6 +18,7 @@ class VehicleFactory extends Factory
             'model' => $this->faker->name(),
             'max_speed' => $this->faker->numberBetween(200, 500),
             'horsepower' => $this->faker->numberBetween(120, 500),
+            'fuel' => $this->faker->numberBetween(6, 20),
             'driver_id' => $this->faker->numberBetween(1, 10),
             'manufacturer_id' => $this->faker->numberBetween(1, 10),
         ];
