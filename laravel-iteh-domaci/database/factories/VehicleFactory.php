@@ -13,9 +13,11 @@ class VehicleFactory extends Factory
      */
     public function definition()
     {
+        $this->faker->addProvider(new \Faker\Provider\Fakecar($this->faker));
+        $v = $this->faker->vehicleArray();
         return [
-            'name' => $this->faker->name(),
-            'model' => $this->faker->name(),
+            'name' => $v['brand'],
+            'model' => $v['model'],
             'max_speed' => $this->faker->numberBetween(200, 500),
             'horsepower' => $this->faker->numberBetween(120, 500),
             'fuel' => $this->faker->numberBetween(6, 20),

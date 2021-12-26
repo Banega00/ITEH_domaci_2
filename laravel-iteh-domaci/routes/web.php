@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/login', function () {
-    return ['401' => 'This route is protected, you have to log in first'];
+    return ['401' => 'You are not authorized to use this route, you have to log in first'];
 })->name('login');
